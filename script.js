@@ -115,7 +115,7 @@ function loadData() {
     const score = localStorage.getItem("score");
 
     if (username && score) {
-        document.getElementById("displayData").innerHTML = `Username: ${ username }, Score: ${ score }`;
+        document.getElementById("displayData").innerHTML = `Username: ${username}, Score: ${score}`;
     } else {
         document.getElementById("displayData").innerHTML = "Data not found in local storage.";
     }
