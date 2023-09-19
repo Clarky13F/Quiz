@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+</head>
+
+<body>
+    <div class="quiz-container" id="start-menu">
+        <h1>Welcome to the Quiz</h1>
+        <p>Click the button below to start the quiz:</p>
+        <button id="start-button" onclick="startQuiz()">Start Quiz</button>
+    </div>
+    <div class="quiz-container" id="quiz" style="display: none;">
+        <div id="timer">Time: <span id="time-left">60</span> seconds</div>
+        <h2>Question <span id="question-number">1</span></h2>
+        <p id="question-text">Loading question...</p>
+        <div id="answers">
+            <button id="1" onclick="checkAnswer(0)">Option 1</button>
+            <button id="2" onclick="checkAnswer(1)">Option 2</button>
+            <button id="3" onclick="checkAnswer(2)">Option 3</button>
+            <button id="4" onclick="checkAnswer(3)">Option 4</button>
+        </div>
+        <p id="result"></p>
+    </div>
+    <div class="quiz-container" id="results" style="display: none;">
+        <h2>Quiz Results</h2>
+        <p>You scored <span id="score">0</span> out of 4.</p>
+        <label for="username">Username:</label>
+        <input type="text" id="username">
+        <button onclick="saveData()">Save Data</button>
+        <div id="displayData"></div>
+    </div>
+
+</body>
+<script src="./js/script.js"></script>
+
+</html>

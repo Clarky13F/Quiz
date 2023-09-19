@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+#start-button {
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+
+#result {
+    font-weight: bold;
+}
